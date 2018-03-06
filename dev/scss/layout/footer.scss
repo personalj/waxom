@@ -1,0 +1,188 @@
+.footer {
+	color: #555555;
+	word-break: break-all; 
+	&__top {
+		padding: 80px 0;
+		background: #191919;
+	}
+	.container {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+	&__logo {
+		display: inline-block;
+		margin-bottom: 30px;
+	}
+	&__about-text {
+		font-size: .875rem;
+		line-height: 24px;
+		margin-bottom: 25px;
+	}
+	&__about-link {
+		color: #ffffff;
+		position: relative;
+		padding-right: 22px;
+		font-family: 'Montserrat-Regular';
+		font-size: .875rem;
+		transition: .3s;
+		&:after {
+			content: '';
+			position: absolute;
+			width: 0;
+			height: 0;
+			border-style: solid;
+			border-width: 4px 0 4px 5px;
+			border-color: transparent transparent transparent #ffffff;
+			right: 0;
+			top: 33%;
+			transition: .3s;
+		}
+		&:hover {
+			color: #555555;
+			&:after {
+				border-color: transparent transparent transparent #555555;
+			}
+		}
+	}
+	&__blog {
+		padding-top: 20px;
+		&-title {
+			color: #ffffff;
+			font-family: 'Raleway-Bold';
+			font-size: 1.5rem;
+			margin-bottom: 10px;
+		}
+		&-item {
+			padding: 15px 0;
+			border-bottom: 1px solid #252525;
+			display: block;
+			&-title {
+				font-size: .75rem;
+				margin-bottom: 10px;
+				color: #363636;
+				transition: .3s;
+				display: block;
+			}
+			&-text {
+				line-height: 20px;
+				font-size: .875rem;
+				transition: .3s;
+				display: block;
+				color: #555555;
+			}
+			&:hover {
+				.footer__blog-item-title {
+					color: #ffffff;
+				}
+				.footer__blog-item-text {
+					color: #c7b299;
+				}
+			}
+		}
+	}
+	&__twitter {
+		padding-top: 20px;
+		&-title {
+			color: #ffffff;
+			font-family: 'Raleway-Bold';
+			font-size: 1.5rem;
+			margin-bottom: 10px;
+		}
+		&-item {
+			padding: 15px 0;
+			border-bottom: 1px solid #252525;
+			display: block;
+			&-tweet {
+				font-size: .875rem;
+				margin-bottom: 10px;
+				color: #555555;
+				display: block;
+				transition: .3s;
+			}
+			&-date {
+				font-size: .75rem;
+				color: #363636;
+				transition: .3s;
+				display: block;
+				transition: .3s;
+			}
+			&:hover {
+				.footer__twitter-item-date {
+					color: #ffffff;
+				}
+				.footer__twitter-item-tweet {
+					color: #c7b299;
+				}
+			}
+		}
+	}
+	&__widgets {
+		padding-top: 20px;
+		.row {
+			margin-right: -5px;
+			margin-left: -5px;
+		}
+	}
+	&__widgets-item {
+		margin-bottom: 10px;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	&__widgets-link {
+		display: inline-block;
+	}
+	&__widgets-title {
+		color: #ffffff;
+		font-family: 'Raleway-Bold';
+		font-size: 1.5rem;
+		margin-bottom: 30px;
+	}
+	&__bottom {
+		padding: 45px 0;
+		background: #111111;
+		font-size: .8125rem;
+		.copyrite_wthite {
+			color: #ffffff;
+		}
+		&-left {
+			float: left;
+			width: 60%;
+		}
+		&-right {
+			float: right;
+			width: 40%;
+			text-align: right;
+			.footer__bottom-item:last-child {
+				padding-right: 0;
+			}
+		}
+		&-item {
+			padding: 0 9px;
+			border-right: 1px solid #252525;
+			display: inline-block;
+			vertical-align: middle;
+			&:last-child {
+				border-right: transparent;
+			}
+			&:first-child {
+				padding-left: 0;
+			}
+		}
+		&-link {
+			color: #555555;
+			transition: .3s;
+			&:hover {
+				color: #c7b299;
+			}
+		}
+	}
+}
+.footer__twitter-item-tweet_blue {
+	color: #00bff3;
+}
+.footer__blog-item:last-child, .footer__twitter-item:last-child {
+	border-bottom-color: transparent;
+}
+.link_gray {
+	color: #959595;
+}
